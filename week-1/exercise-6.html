@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div div{
+            display: block;
+        }
+        div > label{
+            display: inline-block;
+            width: 200px;
+        }
+        .exercise-3{
+            width: 200px;
+            border: 1px solid gray;
+            height: auto;
+        }
+        .exercise-3 > div{
+            margin-bottom: 20px;
+        }
+        input{
+            display: block;
+        }
+        label{
+            display: inline;
+            width: 200px;
+        }
+        .submit-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="">
+        <fieldset>
+            <legend>Your message:</legend>
+            <div>
+               <div>
+                <label  for="to">To</label>
+                <input type="text" placeholder="Example Cafe" name="to" id="to">
+               </div>
+               <div>
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email">
+               </div>
+               <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+               </div>
+               <div>
+                <label for="file">Attach File</label>
+                <input type="file"placeholder name="file" id="file">
+               </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>How you fond us:</legend>
+            <div>
+                <div>
+                    <label for="us">How đi you hear of us</label>
+                    <select name="us" id="us">
+                        <option value="1">Google</option>
+                        <option value="2">Facebook</option>
+                        <option value="3">Twitter</option>
+                    </select>
+                </div>
+                <div>
+                    <div style="display: inline-block;">
+                        <span>Newsletter</span>
+                    </div>
+                    <div style="display: inline-block;">
+                        <input type="checkbox" name="ensure" id="ensure">
+                        <label style="width: auto;" for="ensure">Ensure this box is checked if you wold like to receive email updates</label>
+                    </div>
+
+                </div>
+            </div>
+          </fieldset>
+          <button>Send message</button>
+    </form>
+    <hr>
+
+    <form action="">
+       <div class="exercise-3">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="phone-number">Telephone Number</label>
+            <input type="tel" name="phone-number" id="phone-number">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+        </div>
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color" name="colo" id="color">
+        </div>
+        <div>
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" placeholder="" name="date-of-birth" id="date-of-birth">
+        </div>
+       <div class="submit-container">
+        <button>Submit</button>
+       </div>
+       </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exercise-1 tbody td,.exercise-2 tbody td{
+            border: 1px solid;
+        }
+        tbody tr:first-child,thead{
+            text-align: center;
+        }
+        .exercise-2{
+            border-collapse: collapse;
+        }
+        .exercise-2 tbody{
+            border:4px solid purple ;
+        }
+        .exercise-2 tbody tr:first-child, .exercise-2 tbody tr td:first-child{
+            font-weight: bold;
+        }
+        .exercise-2 tbody tr:first-child{
+            text-align: left;
+        }
+        .exercise-2 tbody td{
+            vertical-align: top;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <table class="exercise-1">
+        <thead >
+            <tr>
+                <td colspan="5">Class Movie Day</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="20px">
+                </td>
+                <td width="100px"><strong>5 pm</strong></td>
+                <td width="100px"><strong>7 pm</strong></td>
+                <td width="120px"><strong>9 pm</strong></td>
+                <td width="100px"><strong>11 pm</strong></td>
+            </tr>
+        
+            <tr>
+                <td><strong>Screen one</strong></td>
+                <td>Star Wars</td>
+                <td>Emprire Strickes Back</td>
+                <td>Return of the Jedi</td>
+                <td>The Exorcist</td>
+            </tr>
+            <tr>
+                <td><strong>Screen two</strong></td>
+                <td colspan="2">Dances with Wolves</td>
+                <td colspan="2">Gone With The Wind</td>
+            </tr>
+            <tr>
+                <td><strong>Screen three</strong></td>
+                <td colspan="2">2001: A Space Odyssey</td>
+                <td>The converstation</td>
+                <td>5 Easy Pieces</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table class="exercise-2">
+        <thead>
+            <tr>
+                <td colspan="8">
+                    All time list in central
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Time</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wenesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+                <td>Sunday</td>
+            </tr>
+            <tr>
+                <td>6:00</td>
+                <td colspan="7">Nation news</td>
+            </tr>
+            <tr>
+                <td>6:30</td>
+                <td colspan="7">Local news</td>
+            </tr>
+            <tr>
+                <td>7:00</td>
+                <td rowspan="2">Opera Fest</td>
+                <td rowspan="2">Radio U</td>
+                <td rowspan="2">Science</td>
+                <td rowspan="2">The living world</td>
+                <td rowspan="1">Word Play</td>
+                <td rowspan="1">Agri Week</td>
+                <td rowspan="2">Floj Fest</td>
+            </tr>
+            <tr>
+                <td>7:30</td>
+                <td>Brain Stew</td>
+                <td>Bismark Forum</td>
+            </tr>
+            <tr>
+                <td>
+                    8:00
+                </td>
+                <td colspan="4" rowspan="4">The Class musical connection</td>
+                <td>Old time Radio</td>
+                <td rowspan="4">Saturday Nite Jazz</td>
+                <td rowspan="4">The Indie Connection</td>
+            </tr>
+            <tr>
+                <td>8:30</td>
+                <td>The Inner Mind</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Open Mike Nite</td>
+            </tr>
+            <tr>
+                <td>9:30</td>
+                <td>Relax</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td colspan="7">World News Feed</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
