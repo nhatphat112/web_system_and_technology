@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="container" class="col-lg-12 d-flex row">
+        <div id="banner" class="col-lg-12">
+            <img width="100%" src="./images/banner_car.jpg" alt="">
+        </div>
+        <div id="newsletter" class="col-lg-4">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="main-title title" colspan="2">
+                            Bảng tin thị trường
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="title" colspan="2">Vàng</td>
+                    </tr>
+                    <tr>
+                        <td>Mua vào</td>
+                        <td>Bán ra</td>
+                    </tr>
+                    <tr>
+                        <td class="purchase-gold"></td>
+                        <td class="sale-gold"></td>
+                    </tr>
+                    <tr>
+                        <td class="title" colspan="2">USD</td>
+                    </tr>
+                    <tr>
+                        <td>Mua vào</td>
+                        <td>Bán ra</td>
+                    </tr>
+                    <tr>
+                        <td class="purchase-usd"></td>
+                        <td class="sale-usd"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="price-update" class="col-lg-4">
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="title main-title" colspan="2">
+                                Cật nhật giá cả thị trường
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mua vào</td>
+                            <td><input type="text" name="update-purchase-price" id="update-purchase-price"></td>
+                        </tr>
+                        <tr>
+                            <td>Bán ra</td>
+                            <td><input type="text" name="update-sale-price" id="update-sale-price"></td>
+                        </tr>
+                        <tr>
+                            <td>Loại xe</td>
+                            <td><select name="vehicle-category" id="vehicle-category">
+                                <option value="/images/car1.jpg;35000" >Toyota</option>
+                                <option value="/images/car2.jpg;15000" >KIA</option>
+                                <option value="/images/car3.jpg;40000" >Ford</option>
+                                <option value="/images/car4.jpg;32000" >Civic</option>
+                                <option value="/images/car5.jpg;50000" >Ferrari</option>
+                                <option value="/images/car7.jpg;45000" >Mercedes</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="radio" name="currency" id="gold-currency" value="1"><label for="gold-currency">Vàng</label>
+                                <input type="radio" name="currency" id="usd-currency" value="0"><label for="usd-currency">USD</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="btn-update" >Update</button>
+                                <button id="btn-state" disabled>State</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div id="price-table" class="col-lg-4">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="title main-title bg-grey" colspan="2">
+                            Bảng báo giá
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="promotion">
+                                <p>- Với kiểu dáng thể thao sang trọng</p>
+                                <p>- Nổi bật, ít tốn nhiên liệu</p>
+                                <p>- Kiểu dáng thể thao</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-grey" id="price-table-img">
+                            <img src="" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price">Giá <span id="price-table-price"></span> USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

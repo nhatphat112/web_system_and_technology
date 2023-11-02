@@ -1,0 +1,61 @@
+#newsletter table, #price-table table {
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+#newsletter table tr td{
+    border: 1px solid rgb(94, 92, 92);
+    border-collapse: collapse;
+}
+#newsletter .title{
+    background-color: rgb(183, 183, 183);
+}
+#newsletter td{
+    height: 40px;
+    width: 40px;
+}
+#newsletter .main-title{
+    color: blue;
+    font-weight: 600;
+    word-spacing: 12px;
+}
+#newsletter td{
+    color: rgb(60, 131, 219);
+    font-weight: 600;
+}
+#price-update td{
+    background-color: rgb(183, 183, 183);
+
+}
+#price-update td{
+    border: 2px solid white;
+}
+#price-update .main-title{
+    color: blue;
+    font-weight: 700;
+    text-align: center;
+}
+#price-table .main-title{
+    color: blue;
+    font-weight: 700;
+}
+#price-table tr{
+    border: 2px solid rgb(94, 92, 92);
+}
+#price-table .promotion{
+    margin: 18px 0px;
+    color: #0099ec;
+    font-weight: 700;
+}
+#price-table .price{
+    color: green;
+    font-weight: 600;
+    word-spacing: 10px;
+}
+.bg-grey{
+    background-color: rgb(183, 183, 183);
+}
+#container div{
+    padding: 0px;
+}
